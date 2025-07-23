@@ -1,2 +1,2 @@
 #!/bin/bash
-13 chars long
+echo "hello $USER"
