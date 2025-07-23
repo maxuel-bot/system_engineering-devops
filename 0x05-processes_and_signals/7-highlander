@@ -8,3 +8,7 @@ do
     echo "To infinity and beyond"
     sleep 2
 done
+
+#!/usr/bin/env bash
+# This script stops the 7-highlander process
+pkill -f 7-highlander
