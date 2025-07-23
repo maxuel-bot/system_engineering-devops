@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script displays all running processes in a tree-like hierarchy including all users and processes without a TTY
+ps -eo user,pid,ppid,tty,%cpu,%mem,cmd --forest
