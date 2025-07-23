@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
-# This script lists non-hidden files in the current directory, showing only the part after the first dash (-) in their names
-for file in *; do
-    # Check if filename contains a dash
-    if [[ "$file" == *-* ]]; then
-        echo "${file#*-}"
+# This script checks properties of a file named "school" and prints specific information
+
+if [ -e "school" ]; then
+    echo "school file exists"
+    if [ ! -s "school" ]; then
+        echo "school file is empty"
     else
-        echo "$file"
+        echo "school file is not empty"
     fi
-done
+    if [ -f "school" ]; then
+        echo "school is a regular file"
+    fi
+else
+    echo "school file does not exist"
+fi
